@@ -19,4 +19,18 @@ router.post('/register', (req, res) => {
     }
 });
 
+router.post('/login', (req, res) => {
+    const userName = req.body.username;
+    const password = req.body.password;
+
+    User.findOne({username: userName, password: password}, (err, user) => {
+        if(err) {
+            res.sendStatus(400);
+            res.send(err);
+        } else {
+            res.send(user);
+        }
+    });
+});
+
 module.exports = router;
