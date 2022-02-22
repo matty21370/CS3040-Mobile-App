@@ -6,4 +6,5 @@
     <string name="login">Login</string>
     <string name="not_registered">Not registered?</string>
     <string name="sign_up">Sign Up</string>
+    <string name="user_failed">Failed to create user</string>
 </resources>

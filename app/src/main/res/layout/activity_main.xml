@@ -16,14 +16,14 @@
         android:id="@+id/txtWelcome"/>
 
     <EditText
+        android:id="@+id/edtTxtUsername"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/txtWelcome"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
         android:hint="@string/username"
-        android:id="@+id/edtTxtUsername"
-        android:inputType="text"/>
+        android:inputType="text" />
 
     <EditText
         android:layout_width="200dp"
@@ -45,6 +45,7 @@
         android:id="@+id/btnLogin"/>
 
     <RelativeLayout
+        android:id="@+id/layoutNotRegistered"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -68,7 +69,16 @@
             android:textStyle="bold"
             android:textColor="@color/design_default_color_secondary"/>
 
+
     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutNotRegistered"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
 
 
 </RelativeLayout>
